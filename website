@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appie Tuinservice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f6f9f5;
+      color: #2d372b;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #4a7c59;
+    }
+    .logo img {
+      height: 36px;
+      margin-right: 10px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a7c59;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #2d372b;
+    }
+    .hero {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1557935729-79a4f1f6279d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background-color: #4a7c59;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero button:hover {
+      background-color: #3b644a;
+    }
+    .container {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #4a7c59;
+      text-align: center;
+    }
+    .diensten {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .dienst-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .dienst-box:hover {
+      transform: translateY(-5px);
+    }
+    .dienst-box img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .dienst-box h3 {
+      color: #2d372b;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .contact-info a {
+      color: #4a7c59;
+      text-decoration: none;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+    footer {
+      background-color: #2d372b;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .hero button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/228B22/plant-under-sun.png" alt="logo" />
+      Appie Tuinservice
+    </div>
+    <nav>
+      <a href="#over">Over ons</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Tuinier in Enschede</h1>
+    <p>Ik verwijder onkruid en maak uw tuin weer mooi</p>
+    <button>Lees meer</button>
+  </section>
+
+  <div class="container">
+    <!-- Inhoud blijft ongewijzigd -->
+  </div>
+
+  <footer>
+    &copy; 2025 Appie Tuinservice - Enschede
+  </footer>
+
+  <a class="whatsapp-button" href="https://wa.me/31651083630" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+    WhatsApp ons
+  </a>
+</body>
+</html>
